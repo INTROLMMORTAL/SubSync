@@ -1,0 +1,73 @@
+/* Общие стили для плеера */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  .video-player {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Контролы */
+  .controls {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  /* Кнопка воспроизведения */
+  button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Прогрессбар */
+  .progress-bar {
+    flex-grow: 1;
+    height: 10px; /* Увеличена высота полосы прогресса */
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .progress-bar-inner {
+    height: 100%;
+    background: white;
+  }
+  
+  /* Регулировка громкости */
+  .volume-bar input {
+    width: 80px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .volume-bar input::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .volume-bar input::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
